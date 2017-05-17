@@ -1,1 +1,1 @@
-Ebben a projektben találhatóak általam készített programok
+Ebben a projektben található 2 általam készített program
