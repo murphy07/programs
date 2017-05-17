@@ -1,0 +1,20 @@
+Ebben a projektben egy olyan programot valósítunk meg,  amely egy mozi jegyeladásait tudja kezelni.
+A program az alábbi funkciókkal rendelkezik:
+    A programban megtekinthetőek a filmek adatai (cím, származás, szinkronizált-e,
+rendező, szinopszis, hossz, lejátszások maximális száma, korhatár-besorolás(1-5)),
+jelenítsük meg minden filmre az eladott jegyek számát.
+    Lehet egy adott filmet, illetve termet kiválasztva új előadást hirdetni adott időpontra,
+valamint előadást lehet törölni, amennyiben senki sem foglalt rá helyet. A programnak
+figyelnie kell, hogy a filmek nem vetíthetőek a megendgedettnél többször, egy film
+legfeljebb 3 teremben vetíthető párhuzamosan, illetve, hogy két előadás ne ütközzön
+az adott teremben (a film hossza után kell fél óra takarítási időt számolni).
+    Az 1-3 korhatár-besorolású filmek bármely időpontban vetíthetőek, míg a 4. csak 17
+óra után, az 5. pedig 21 óra után.
+A program listázza az előadásokat időpont szerint, és azt lehessen szűrni film, illetve
+terem alapján. Minden előadásnál legyen látható, mennyi szabad hely van még rá.
+    A meghirdetett előadásokra lehet helyet foglalni. A helyfoglalás adott székre (sor és
+oszlop megadásával) történik figyelembe véve, hogy az a szék még nincs lefoglalva.
+A lefoglalt helyek ezek után bármikor kiadhatóak. Kiadott jegyet már nem lehet újra
+kiadni, de foglalást lehet visszavonni. 
+
+A felhasználói felület a java Swing csomagja segítségével, azadatbáziskezelés JDBC segítségével lett implementálva.
