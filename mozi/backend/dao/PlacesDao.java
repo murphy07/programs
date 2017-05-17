@@ -45,20 +45,8 @@ public class PlacesDao extends AbstractEntityDao<PlacesEntity>{
         }catch(SQLException ex){
            throw new SQLException("Nem talalhato a megadott ID-val RoomEntity!", ex);        
         }
-        
-        try{
-            RoomEntity room=DataSource.getInstance().getRoomDao()
-                    .getEntityById(rs.getLong("ROOM_ID"));
-            int n=rs.getInt("PLACES_ROW");
-            if(n<=0 || n>room.getRow()){
-                throw new SQLException("nincs ennyi sora a teremnek");
-            }
-            entity.setRow(rs.getInt("PLACES_ROW"));
-        }catch(SQLException ex){
-            throw new SQLException("nem talalhato a megadott ID-val RoomEntity");
-        }
+            
         entity.setColumn(rs.getInt("PLACES_COLUMN"));
         entity.setStatus(rs.getInt("PLACES_STATUS"));
-    }
     
 }
